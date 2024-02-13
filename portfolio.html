@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harichandana Neralla - Data Scientist Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        header a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Harichandana Neralla</h1>
+        <p>MS in Computer Science, Data Science</p>
+        <p>University of Texas at Dallas</p>
+        <p><a href="https://www.linkedin.com/in/harichandana-neralla/" target="_blank">LinkedIn</a> | <a
+                href="https://github.com/harineralla" target="_blank">GitHub</a></p>
+        <p>Contact: harichandana.neralla@utdallas.edu</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <p>Hello Recruiter,</p>
+            <p>As a diligent computer science graduate student specializing in Data Science at the University of Texas at
+                Dallas, I am deeply fascinated by the transformative potential of data. I thrive on converting complex
+                datasets into comprehensible narratives that drive decision-making. As I approach the culmination of my
+                academic pursuit, I am actively seeking internships and full-time opportunities that will enable me to
+                contribute my data-driven mindset and technical skills to pioneering projects.</p>
+        </section>
+
+        <section class="motivation">
+            <h3>Motivation towards Data Science</h3>
+            <p>The allure of discovering hidden patterns within data and using them to unravel complex problems has
+                fueled my passion for data science. In today's world, where breakthroughs in ML, AI, and deep learning
+                drive innovations, particularly in the health sector, my motivation is to contribute to these
+                advancements that directly enhance human well-being.</p>
+        </section>
+
+        <section class="experience">
+            <h3>Experience</h3>
+            <ul>
+                <li>
+                    <h3>Expression Invariant Features for Face Recognition</h3>
+                    <ul>
+                        <li>Developed an innovative approach for facial expression recognition using state-of-the-art
+                            techniques.</li>
+                        <li>Investigated the challenges of recognizing facial expressions in various scenarios.</li>
+                        <li>Utilized deep learning methods, including Convolutional Neural Networks (CNNs) like the
+                            VGG-Face model.</li>
+                        <li>Assembled a dataset of 7200 facial images, encompassing 5 different expressions for each of
+                            the 70 individuals.</li>
+                        <li>Conducted comprehensive data preprocessing, involving image resizing, normalization, and
+                            feature extraction.</li>
+                        <li>Employed Principal Component Analysis (PCA) and Linear Discriminant Analysis (LDA) to
+                            extract essential facial features and reduce dimensionality.</li>
+                        <li>Implemented Support Vector Machine (SVM) with different kernels (linear, poly, rbf) for
+                            classification.</li>
+                        <li>Achieved promising accuracy rates, including 76.8% accuracy using SVM-linear, 60.8% using
+                            SVM-poly, and 60.0% using SVM-rbf.</li>
+                        <li>Evaluated the model's performance using confusion matrices, ROC curves, and F1-scores.</li>
+                        <li>Presented valuable insights into facial recognition technology, particularly in addressing
+                            challenges posed by varying facial expressions.</li>
+                        <li>Publication: IJEAT (Scopus Index, <a
+                                href="https://www.ijeat.org/portfolio-item/B3099129219/" target="_blank">Link</a>)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Online Shoppers Purchase Intension Prediction</h3>
+                    <ul>
+                        <li>Dataset: Used the UCI ML repository's Online Shoppers Purchasing Intention Dataset with
+                            12,330 sessions. The dataset consisted of 10,422 negative class samples (not purchasing) and
+                            1,908 positive class samples (purchasing).</li>
+                        <li>Data Preprocessing: Applied Label Encoding for categorical variables ('Month',
+                            'VisitorType', 'Weekend'), Standard Scaling for numerical features, and shuffling of data.
+                        </li>
+                        <li>Data Sampling: After encoding categorical data to numerical values, we split the data into
+                            training and testing sets, allocating 20% for testing. Within the training set, we manually
+                            created four batch samples, each with different ratios of positive to negative examples
+                            (1:1, 1:2, 1:3, 1:4).</li>
+                        <li>Feature Selection: Used SelectKBest method to choose informative features. Optimal
+                            performance achieved with 12 selected features.</li>
+                        <li>Decision Tree: Evaluated different batch sampling ratios. The 1:3 ratio (3 positive samples
+                            to 1 negative sample) yielded the best results. Achieved accuracy of 96.56%, precision of
+                            65.90%, and recall of 55.32%.</li>
+                        <li>SVM with Gaussian Kernel: Chose parameters for the Gaussian kernel, achieving accuracy of
+                            87.26%, precision of 65.90%, and recall of 48.90% for the 1:3 batch.</li>
+                        <li>Gradient Boosting: Achieved accuracy of 87.96%, precision of 62.39%, and recall of 69.82%
+                            for the 1:3 batch.</li>
+                        <li>Random Forest: Attained accuracy of 88.44%, precision of 64.65%, and recall of 67.63% for
+                            the 1:3 batch.</li>
+                        <li>Logistic Regression: Achieved accuracy of 87.63%, precision of 68.15%, and recall of 48.41%
+                            for the 1:3 batch.</li>
+                        <li>Cross-Validation: For SVM, observed an average accuracy of 48.7%, average precision of
+                            46.0%, and average recall of 59.1% due to class imbalance.</li>
+                        <li>Model Comparison: Random Forest demonstrated the best performance overall, with higher
+                            accuracy, precision, and recall compared to other algorithms.</li>
+                        <li>
+                            <img src="/correlation.png"/>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Recurrent Neural Networks (RNN) for Time Series Prediction namely for Stock Market Data</h3>
+                    <ul>
+                        <li>Developed an LSTM-based stock price prediction model on the SP500 dataset.</li>
+                        <li>Achieved an average MSE of 49.72 for Google, 50.66 for Apple, 50.50 for Amazon, and 49.54
+                            for Fang stocks over 10 epochs.</li>
+                        <li>Dataset and Data Preprocessing: Preprocessed data, selecting the 'Close' column and applying
+                            MinMaxScaler normalization.</li>
+                        <li>Investigated how LSTM can recognize intricate patterns in historical stock data, crucial for
+                            capturing long-term trends.</li>
+                        <li>Discussed how LSTM architecture mitigates this issue, enabling the training of deep networks
+                            for accurate stock price predictions.</li>
+                        <li>Optimized LSTM parameters by adjusting weights and biases, ensuring the model adapts to
+                            changing market conditions.</li>
+                        <li>Attained lower MSE values indicating better prediction accuracy (e.g., 49.72 for Google).
+                        </li>
+                        <li>Explored the impact of batch size (e.g., larger batches for faster training) and epochs
+                            (e.g., 10 epochs) on model performance.</li>
+                        <li>Presented MSE loss values for each epoch (e.g., Epoch 1: MSE of 49.67).</li>
+                        <li>Visualized loss curves for Apple stock data across four epochs.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="interests">
+            <h3>Interests and Capabilities</h3>
+            <p>I’m currently working on AI and security projects and a term paper demonstrating both the ways Artificial
+                Intelligence can be used for security breaches and at the same time AI used for the security of the
+                data. Examples are how computer vision is used to detect motion of the human being in their private
+                spaces and use that data for commercial purposes.</p>
+            <p>I’m also working on one of the generative AI models to have a good, optimized language model generated
+                through any given text corpus. I want to work on anything that makes an impact and ease of life to
+                humankind using technology.</p>
+        </section>
+
+        <section class="technologies">
+            <h3>Other Technologies and Experience</h3>
+            <p><b>Deep Learning Libraries:</b> NumPy, Pandas, Matplotlib, PyTorch, TensorFlow, NLTK, OpenCV, Sklearn,
+                PySpark, MLlib.</p>
+            <p><b>ML Techniques:</b> Regression, Clustering, SVM, Naïve Bayes, Random Forest, NLP, CNN, GAN, YOLO</p>
+            <p><b>Other Frameworks for Analytics:</b> Tableau, Excel, PowerBi, Hadoop, Spark, DataBricks, ETL, AWS,
+                Arduino, Flask.</p>
+        </section>
+    </div>
+</body>
+
+</html>
