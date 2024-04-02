@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harichandana Neralla - Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"> -->
+</head>
+
+<body>
+    <nav class="sidebar">
+        <img src="./img/face-logo.png">
+        <header>
+            <h1>Harichandana Neralla</h1>
+            <h3>University of Texas at Dallas</h3>
+            <h4>MS in Computer Science <p>(Data Science)</p>
+            </h4>
+            <h4>
+                <p>☎️ Connect:&nbsp;&nbsp;<a href="https://www.linkedin.com/in/harichandana-neralla/"
+                        target="_blank">LinkedIn</a> |
+                    <a href="https://github.com/harineralla" target="_blank">GitHub</a>
+                </p>
+                <p>&#128233; Email: <a href="mailto:harichandana.neralla@utdallas.edu">Harichandana-email</a></p>
+            </h4>
+        </header>
+    </nav>
+
+    <main class="main">
+        <h2>📚 Projects</h2>
+        <section>
+            <h3>Time Series Prediction with LSTM for Stock Market Data</h3>
+            <ul>
+                <li>Constructed a sophisticated LSTM model to forecast stock prices, focusing on the S&P 500 dataset
+                    spanning from 2010 to 2021.</li>
+                <li>Undertook extensive data preprocessing to adapt the dataset for the LSTM model, including
+                    normalization of closing prices to ensure effective learning.</li>
+                <li>Detailed examination of LSTM's architecture revealed its unique ability to remember long-term
+                    dependencies, crucial for predicting stock market trends.</li>
+                <li>Experimented with batch sizes and epochs as hyperparameters to fine-tune the model's learning
+                    process, achieving a balance between training time and model accuracy.</li>
+                <li>Implemented Mean Squared Error (MSE) for model evaluation, highlighting LSTM's superior predictive
+                    accuracy over traditional models through detailed loss analysis across multiple epochs.</li>
+            </ul>
+
+            <h4>LSTM Model Insights</h4>
+            <p>The LSTM model's architecture, with its memory cells and gates, enables nuanced control over the
+                information flow, making it exceptionally suited for the complex dynamics of stock price movements. This
+                project's findings underscore the LSTM's predictive strength and adaptability to financial time series
+                data.</p>
+
+            <figure>
+                <img src="data:image/png;base64,[image_lstm_architecture_base64]" alt="LSTM Architecture">
+                <figcaption>Fig 1: LSTM Model Architecture highlighting the cell state, input, forget, and output gates.
+                </figcaption>
+            </figure>
+
+            <h4>Performance and Analysis</h4>
+            <p>The model's effectiveness was demonstrated through a comprehensive analysis of loss metrics across
+                different stock datasets (Amazon, Google, Fang, Apple), with particular attention to MSE reductions over
+                epochs. This rigorous evaluation showcased LSTM's capacity for capturing complex patterns in stock price
+                data, leading to more accurate predictions.</p>
+
+            <table>
+                <caption>Table 1: Mean Squared Error (MSE) Loss Function Analysis Across Epochs for Amazon Stock Data
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Epoch No</th>
+                        <th>MSE Loss</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>50.53</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>50.53</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>50.49</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>The incremental reduction in MSE loss across epochs illustrates the model's learning curve and its
+                increasing proficiency in forecasting stock prices. The LSTM model's nuanced understanding of time
+                series data, particularly for financial markets, offers promising avenues for future exploration and
+                optimization.</p>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>

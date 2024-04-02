@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harichandana Neralla - Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"> -->
+</head>
+
+<body>
+    <nav class="sidebar">
+        <img src="./img/face-logo.png">
+        <header>
+            <h1>Harichandana Neralla</h1>
+            <h3>University of Texas at Dallas</h3>
+            <h4>MS in Computer Science <p>(Data Science)</p>
+            </h4>
+            <h4>
+                <p>☎️ Connect:&nbsp;&nbsp;<a href="https://www.linkedin.com/in/harichandana-neralla/"
+                        target="_blank">LinkedIn</a> |
+                    <a href="https://github.com/harineralla" target="_blank">GitHub</a>
+                </p>
+                <p>&#128233; Email: <a href="mailto:harichandana.neralla@utdallas.edu">Harichandana-email</a></p>
+            </h4>
+        </header>
+    </nav>
+
+    <main class="main">
+        <h2>📚 Projects</h2>
+        <section>
+            <h3>Online Shoppers Purchase Intention Prediction</h3>
+            <ul>
+                <li>Analyzed the UCI Machine Learning Repository’s dataset, including detailed session data to predict
+                    purchasing intentions.</li>
+                <li>Addressed class imbalance through strategic undersampling and oversampling, improving model training
+                    outcomes.</li>
+                <figure>
+                    <img src="/img/over-sampling-affect.png" alt="Oversampling before and after">
+                    <figcaption>Fig 1: Oversampling Impact on Data Distribution&#8203;.
+                    </figcaption>
+                </figure>
+                <li>Optimized feature selection to enhance model performance, leveraging techniques like SelectKBest.
+                </li>
+                <figure>
+                    <img src="/img/correlation-matrix-features.png" alt="Correlation Matrix">
+                    <figcaption>Fig 2: Correlation Matrix of Feature&#8203;.</figcaption>
+                </figure>
+                <li>Implemented a variety of machine learning models: Decision Trees, SVMs, Random Forest, Gradient
+                    Boosting, and XGBoost.</li>
+                <li>Conducted thorough hyperparameter tuning and cross-validation to ensure robust model performance.
+                </li>
+                <li>Documented and compared model performances using key metrics to identify the most effective
+                    predictive model.</li>
+            </ul>
+
+            <figure>
+                <img src="/img/vernoi-diagram-boundary-proximity.png" alt="XGBoost Confusion Matrix">
+                <figcaption>Fig 3: Vernoi decision boundary based on proximity&#8203;.
+                </figcaption>
+            </figure>
+
+            <ul>
+                <li>
+                    Model Performance Comparison: The table below highlights the comparative performance of different
+                    models.
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Accuracy</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>F1 Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Decision Tree</td>
+                                <td>88.32%</td>
+                                <td>65.26%</td>
+                                <td>63.99%</td>
+                                <td>64.61%</td>
+                            </tr>
+                            <tr>
+                                <td>SVM (RBF Kernel)</td>
+                                <td>88.36%</td>
+                                <td>69.62%</td>
+                                <td>53.52%</td>
+                                <td>60.52%</td>
+                            </tr>
+                            <tr>
+                                <td>Random Forest</td>
+                                <td>88.44%</td>
+                                <td>64.65%</td>
+                                <td>67.63%</td>
+                                <td>66.11%</td>
+                            </tr>
+                            <tr>
+                                <td>Gradient Boosting</td>
+                                <td>87.96%</td>
+                                <td>62.39%</td>
+                                <td>69.82%</td>
+                                <td>65.90%</td>
+                            </tr>
+                            <tr>
+                                <td><b><i>XGBoost</b></i></td>
+                                <td><b><i></i>88.52%</b></i></td>
+                                <td><b><i></i>64.41%</b></i></td>
+                                <td><b><i></i>69.58%</b></i></td>
+                                <td><b><i></i>66.90%</b></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+                    XGBoost demonstrated the best performance, marked by the highest accuracy and F1 Score,showcasing
+                    its efficacy in managing complex feature interactions and class imbalances.
+                </li>
+            </ul>
+            <figure>
+                <img src="/img/xgboost-learning-curve.png" alt="Model Learning Curve">
+                <figcaption>Fig 4: Learning Curve of XGBoost Mode&#8203;.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

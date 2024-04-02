@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background-color: #1b252e;
+    color: #f8f9fa;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar h1,
+.sidebar h3,
+.sidebar h4 {
+    margin: 0.5rem 0;
+}
+
+.sidebar a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+
+.main {
+    flex-grow: 1;
+    height: calc(100vh - 40px);
+    /* width: 800px; */
+    box-shadow: 0 0 0 5px #ddd;
+    margin: 20px 20px 0px 310px;
+    padding: 5px 0px 0px 15px;
+    overflow: auto;
+}
+
+.sidebar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+section {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 0.5rem;
+}
+
+h2 i {
+    margin-right: 0.5rem;
+}
+
+.skill-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.subheading {
+    width: 540px;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+section p {
+    margin-left: 30px;
+}
+
+section h4 {
+    margin: 5px 0 10px 30px;
+}
+
+.subheading p {
+    margin: 2px;
+    color: #6c757d;
+}
+
+.subheading p strong {
+    color: #343a40;
+}
