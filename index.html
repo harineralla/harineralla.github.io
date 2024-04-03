@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harichandana Neralla - Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <img src="./img/face-logo.png" />
+        <header>
+            <h1>Harichandana Neralla</h1>
+            <h3>University of Texas at Dallas</h3>
+            <h4>MS in Computer Science <p>(Data Science)</p>
+            </h4>
+            <h4>
+                <p>
+                    ☎️ Connect:&nbsp;&nbsp;<a href="https://www.linkedin.com/in/harichandana-neralla/"
+                        target="\_blank">LinkedIn</a>
+                    |
+                    <a href="https://github.com/harineralla" target="\_blank">GitHub</a>
+                </p>
+                <p>
+                    &#128233; Email:
+                    <a href="mailto:harichandana.neralla@utdallas.edu">Harichandana-email</a>
+                </p>
+            </h4>
+        </header>
+    </nav>
+    <main class="main">
+        <h2>🙋🏻‍♀️ Introduction</h2>
+        <section>
+            <p style="justify-content: center; padding-top: 0px">
+            <p>
+                Hello, I'm Harichandana. As an enthusiastic and diligent computer science graduate student specializing
+                in Data Science at the University of Texas at Dallas, I am driven by an insatiable curiosity for the
+                transformative power of data. My passion lies in unlocking the invaluable insights hidden within complex
+                datasets, transforming them into comprehensible narratives that drive informed decision-making.
+            </p>
+            <p>
+                With a keen interest in software development, distributed systems and cloud computing, I am actively
+                expanding my horizons to leverage cutting-edge technologies that enable seamless data processing,
+                analysis, and storage at scale. I thrive on the challenge of exploring innovative methods to harness the
+                full potential of data, pushing the boundaries of what is possible.
+            </p>
+            </p>
+        </section>
+        <section>
+            <h2>📚 Projects</h2>
+            <ul class="projects-bullets">
+                <li>
+                    <a href="https://github.com/harineralla/automated_code_comment">Thesis: Detecting Security
+                        Vunerability and producing software
+                        patches using LLMs</a>
+                </li>
+                <li>
+                    <a href="https://github.com/harineralla/Online-shopping-Intension-Prediction">Online Shoppers
+                        Purchase intension Prediction</a>
+                </li>
+                <li>
+                    <a href="https://github.com/harineralla/Stock-Market-Prediction-using-RNN-LSTM-">RNN for stock
+                        Market prediction</a>
+                </li>
+                <li>
+                    <a href="https://www.ijeat.org/wp-content/uploads/papers/v9i2/B3099129219.pdf">Expression Invariant
+                        Features for Face Recognition</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>🛠️ Skills</h2>
+            <div class="skill-sections">
+                <div class="subheading">
+                    <p><strong>Languages:</strong> Python, R, Matlab, Objective C, MySQL, Scala.</p>
+                </div>
+                <div class="subheading">
+                    <p>
+                        <strong>Deep Learning Libraries:</strong> NumPy, Pandas,
+                        Matplotlib, PyTorch, TensorFlow, NLTK, OpenCV, CoreFlow,
+                        Sklearn, PySpark, MLlib, Keras.
+                    </p>
+                </div>
+                <div class="subheading">
+                    <p>
+                        <strong>ML and DL Skills:</strong> Regression, Clustering, SVM,
+                        Decision Trees, Naïve Bayes, Random Forest, NLP, CNN, RNN, LSTM,
+                        GAN, YOLO.
+                    </p>
+                </div>
+                <div class="subheading">
+                    <p>
+                        <strong>Other Frameworks for Analytics:</strong> Flask, Django,
+                        Tableau, Excel, PowerBi, Hadoop, Spark, DataBricks, ETL, AWS
+                        Services, Arduino.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section style="margin-top: 20px">
+            <h3>
+                Other Experience
+                <a href="/sde-experience.html">Python Full Stack/Software Development Engineer</a>
+            </h3>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <script>
+        const projectContent = {
+            "https://github.com/your-github-username/thesis.html": "Content for 'Thesis: Detecting Security Vunerability and producing software patches using LLMs'",
+            "https://github.com/your-github-username/MLproject.html": "Content for 'Online Shoppers Purchase intension Prediction'",
+            "https://github.com/your-github-username/bigdataproject.html": "Content for 'RNN for stock Market prediction'",
+            "https://github.com/your-github-username/miniproject.html": "Content for 'Expression Invariant Features for Face Recognition'"
+        };
+
+        const modal = document.getElementById("modal");
+        const modalBody = document.querySelector(".modal-body");
+        const closeBtn = document.querySelector(".close");
+        const githubLink = document.getElementById("github-link");
+        const projectLinks = document.querySelectorAll(".projects-bullets a");
+
+        const openModal = (event) => {
+            event.preventDefault();
+            const projectLink = event.target.getAttribute("href");
+            const projectGitHubUrl = `https://github.com/your-github-username${projectLink}`;
+            const projectTitle = event.target.textContent;
+
+            modalBody.innerHTML = projectContent[projectGitHubUrl] || ""; // Use the content from the object, or an empty string if not found
+            githubLink.href = projectGitHubUrl;
+            modal.style.display = "block";
+        };
+
+        const closeModal = () => {
+            modal.style.display = "none";
+        };
+
+        projectLinks.forEach((link) => link.addEventListener("click", openModal));
+        closeBtn.addEventListener("click", closeModal);
+        window.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
