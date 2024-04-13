@@ -4,7 +4,7 @@ body {
     padding: 0;
     display: flex;
     min-height: 100vh;
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .sidebar {
@@ -55,7 +55,7 @@ body {
 }
 
 section {
-    background-color: #f8f9fa;
+    background-color: #fff;
     margin-bottom:30px;
 }
 
@@ -142,4 +142,8 @@ section h4 {
 
 .prof-experience li {
     margin: 5px 0 10px 10px;
+}
+
+.details {
+    margin-bottom: 15px 0 0 10px;
 }
