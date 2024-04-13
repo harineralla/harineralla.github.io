@@ -23,21 +23,15 @@ body {
     text-align: center;
 }
 
-.sidebar h1,
-.sidebar h3,
-.sidebar h4 {
-    margin: 0.5rem 0;
+h1 {
+    font-size: 2.55em;
+    margin: 20px 0 40px 0;
 }
 
 .sidebar a {
     color: #007bff;
     text-decoration: none;
 }
-
-.sidebar h2 {
-    margin-top: 0;
-}
-
 
 .main {
     flex-grow: 1;
@@ -149,4 +143,12 @@ section h4 {
 
 .details {
     margin-bottom: 15px 0 0 10px;
+}
+
+.university {
+    margin: 20px 0 50px 0px;
+}
+
+.contact {
+    margin: 300px 0 0 0;
 }
